@@ -4,7 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListAdapter;
+import android.widget.ListView;
 
 public class SpendingPage extends Activity {
 
@@ -32,6 +35,11 @@ public class SpendingPage extends Activity {
 
             }
         });
+
+        String[] transactions = {"2019/1/1 $50", "2019/1/1 $70", "2019/1/1 $70", "2019/1/1 $39","2019/1/1 $50","2019/1/1 $50","2019/1/1 $50","2019/1/1 $50"};
+        ListAdapter moneyMapListAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, transactions);
+        ListView moneyMapListView = (ListView)findViewById(R.id.transactions);
+        moneyMapListView.setAdapter(moneyMapListAdapter);
     }
 
 }
