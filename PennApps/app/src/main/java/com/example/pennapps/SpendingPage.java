@@ -16,21 +16,21 @@ public class SpendingPage extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ellen_spending_page);
 
-        Button editGoal = (Button)findViewById(R.id.EditButton);
-        editGoal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startintent = new Intent(getApplicationContext(), EditGoals.class);
-                startActivity(startintent);
-
-            }
-        });
-
         Button spendingChart = (Button)findViewById(R.id.ActivitiesButton);
         spendingChart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent startintent = new Intent(getApplicationContext(), SpendingChart.class);
+                startActivity(startintent);
+
+            }
+        });
+
+        Button goal = (Button)findViewById(R.id.GoalButton);
+        goal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startintent = new Intent(getApplicationContext(), EditGoals.class);
                 startActivity(startintent);
 
             }

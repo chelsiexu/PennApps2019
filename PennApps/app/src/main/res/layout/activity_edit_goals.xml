@@ -8,6 +8,117 @@
     android:background = "@color/colorAccent">
 
     <TextView
+        android:id="@+id/SpendingGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Spending Goal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.249"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.592"
+        tools:text="Spending Goal: " />
+
+    <TextView
+        android:id="@+id/SavingGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Saving Goal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Spend"
+        app:layout_constraintVertical_bias="0.61"
+        tools:text="Saving Goal: " />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/darker_gray"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/Activities"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Save" />
+
+    <TextView
+        android:id="@+id/SpendGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:inputType="number"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toEndOf="@+id/Spend"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.592" />
+
+    <TextView
+        android:id="@+id/SaveGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="40dp"
+        android:inputType="number"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toEndOf="@+id/Save"
+        app:layout_constraintTop_toBottomOf="@+id/SpendGoal"
+        app:layout_constraintVertical_bias="0.171" />
+
+    <Button
+        android:id="@+id/EditButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="288dp"
+        android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+        android:text="Edit"
+        app:layout_constraintBottom_toTopOf="@+id/SpendGoal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Goal"
+        app:layout_constraintTop_toBottomOf="@+id/Month"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <TextView
         android:id="@+id/Spend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,10 +132,10 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintHorizontal_bias="0.141"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.422" />
+        app:layout_constraintVertical_bias="0.314" />
 
     <TextView
         android:id="@+id/EditGoals"
@@ -40,10 +151,10 @@
         android:textSize="38sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintHorizontal_bias="0.126"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.188" />
+        app:layout_constraintVertical_bias="0.159" />
 
     <TextView
         android:id="@+id/Save"
@@ -59,10 +170,10 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Spend"
-        app:layout_constraintVertical_bias="0.147" />
+        app:layout_constraintVertical_bias="0.058" />
 
     <TextView
         android:id="@+id/DollarSign1"
@@ -78,10 +189,10 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toEndOf="@+id/Spend"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.422" />
+        app:layout_constraintVertical_bias="0.32" />
 
     <TextView
         android:id="@+id/DollarSign2"
@@ -97,10 +208,10 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintHorizontal_bias="0.133"
         app:layout_constraintStart_toEndOf="@+id/Save"
         app:layout_constraintTop_toBottomOf="@+id/DollarSign1"
-        app:layout_constraintVertical_bias="0.147" />
+        app:layout_constraintVertical_bias="0.048" />
 
     <EditText
         android:id="@+id/SpendGoalInput"
@@ -119,10 +230,10 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/DollarSign1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.425" />
+        app:layout_constraintVertical_bias="0.316" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/SaveGoalInput"
         android:layout_width="132dp"
         android:layout_height="51dp"
         android:layout_marginStart="8dp"
@@ -135,24 +246,21 @@
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toEndOf="@+id/DollarSign2"
         app:layout_constraintTop_toBottomOf="@+id/SpendGoalInput"
-        app:layout_constraintVertical_bias="0.11" />
+        app:layout_constraintVertical_bias="0.025" />
 
     <Button
         android:id="@+id/SubmitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="136dp"
-        android:layout_marginRight="136dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginRight="164dp"
         android:layout_marginBottom="8dp"
         android:text="Submit"
-        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintBottom_toTopOf="@+id/SaveGoalInput"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.96"
         app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.558" />
+        app:layout_constraintVertical_bias="0.238" />
 </android.support.constraint.ConstraintLayout>
