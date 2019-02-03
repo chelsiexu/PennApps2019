@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background = "@color/colorAccent">
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/Month"
@@ -13,13 +13,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="160dp"
-        android:layout_marginBottom="670dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginBottom="366dp"
         android:ems="10"
         android:inputType="text"
         android:text="Monthly Average"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/transactions"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -118,8 +118,9 @@
         android:background="@android:color/darker_gray"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/Activities"
-        app:layout_constraintTop_toBottomOf="@+id/Save"
-        tools:layout_editor_absoluteX="8dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Save" />
 
     <TextView
         android:id="@+id/SpendGoal"
@@ -199,9 +200,20 @@
         app:layout_constraintVertical_bias="0.659" />
 
     <ListView
-        android:layout_width="395dp"
-        android:layout_height="219dp"
+        android:id="@+id/transactions"
+        android:layout_width="350dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="8dp"
         android:background="@color/colorPrimary"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="496dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.968" />
 </android.support.constraint.ConstraintLayout>
