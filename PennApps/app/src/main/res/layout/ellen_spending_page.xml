@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background = "@color/colorAccent">
 
     <TextView
         android:id="@+id/Month"
@@ -169,6 +170,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
         android:text="Edit"
         app:layout_constraintBottom_toTopOf="@+id/SpendGoal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -183,14 +185,23 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
         android:text="Monthly Pie Chart"
-        app:layout_constraintBottom_toTopOf="@+id/Activities"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/Goal"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.677" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.659" />
+
+    <ListView
+        android:layout_width="395dp"
+        android:layout_height="219dp"
+        android:background="@color/colorPrimary"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="496dp" />
 </android.support.constraint.ConstraintLayout>
