@@ -34,6 +34,8 @@
             android:name=".Login"
             android:label="Login"></activity>
 
+        <activity android:name = ".Register"></activity>
+
         <activity
             android:name=".Map"
             android:label="@string/title_activity_map"></activity>

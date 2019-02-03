@@ -32,6 +32,16 @@ public class MainActivity extends Activity {
                 startActivity(startIntent);
             }
         });
+
+        Button toDummy = (Button)findViewById(R.id.dummybutton);
+        toDummy.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), Login.class);
+                startActivity(startIntent);
+            }
+        });
     }
 
 }
