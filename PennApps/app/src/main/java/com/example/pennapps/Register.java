@@ -1,5 +1,6 @@
 package com.example.pennapps;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -33,6 +34,12 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.bRegister:
+                String fullname = etFullname.getText().toString();
+                String username = etUsername.getText().toString();
+                String password = etPassword.getText().toString();
+                String email = etEmail.getText().toString();
+
+                User user = new User(fullname, username, email, password);
                 break;
         }
     }
