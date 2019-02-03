@@ -13,7 +13,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button toSpending = (Button)findViewById(R.id.tosp);
+        Button toSpending = (Button)findViewById(R.id.spending_button);
         toSpending.setOnClickListener(new View.OnClickListener() {
 
             @Override
