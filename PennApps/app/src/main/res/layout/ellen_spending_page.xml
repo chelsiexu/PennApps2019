@@ -119,7 +119,7 @@
         tools:layout_editor_absoluteX="8dp" />
 
     <TextView
-        android:id="@+id/Spend Goal"
+        android:id="@+id/SpendGoal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -139,7 +139,7 @@
         app:layout_constraintVertical_bias="0.218" />
 
     <TextView
-        android:id="@+id/Save Goal"
+        android:id="@+id/SaveGoal"
         android:layout_width="wrap_content"
         android:layout_height="31dp"
         android:layout_marginStart="28dp"
@@ -147,7 +147,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="40dp"
         android:inputType="number"
         android:text="default=0"
         android:textSize="24sp"
@@ -155,11 +155,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/Save"
-        app:layout_constraintTop_toBottomOf="@+id/Spend Goal"
+        app:layout_constraintTop_toBottomOf="@+id/SpendGoal"
         app:layout_constraintVertical_bias="0.373" />
 
     <Button
-        android:id="@+id/Edit Goal"
+        android:id="@+id/EditButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -168,7 +168,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:text="Edit"
-        app:layout_constraintBottom_toTopOf="@+id/Spend Goal"
+        app:layout_constraintBottom_toTopOf="@+id/SpendGoal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.96"
         app:layout_constraintStart_toEndOf="@+id/Goal"

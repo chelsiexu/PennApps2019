@@ -2,4 +2,5 @@
     <string name="app_name">PennApps</string>
     <string name="title_activity_home_page">HomePage</string>
     <string name="title_activity_spending_chart">SpendingChart</string>
+    <string name="title_activity_map">Map</string>
 </resources>
