@@ -22,6 +22,16 @@ public class SpendingPage extends Activity {
 
             }
         });
+
+        Button spendingChart = (Button)findViewById(R.id.ActivitiesButton);
+        spendingChart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startintent = new Intent(getApplicationContext(), SpendingChart.class);
+                startActivity(startintent);
+
+            }
+        });
     }
 
 }
