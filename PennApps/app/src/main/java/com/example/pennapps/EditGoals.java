@@ -12,5 +12,17 @@ public class EditGoals extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_goals);
+
+        Button submit = (Button)findViewById(R.id.SubmitButton);
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startintent = new Intent(getApplicationContext(), SpendingPage.class);
+                startActivity(startintent);
+
+            }
+        });
     }
+
+
 }
